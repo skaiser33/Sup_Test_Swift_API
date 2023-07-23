@@ -1,4 +1,3 @@
-// main.swift
 import Foundation
 import AlgoliaSearchClient
 
@@ -12,7 +11,6 @@ struct Record: Encodable {
 }
 
 // Add the client to the dependencies of your targets; index is only created if a record is saved
-print(algoliaAppId, algoliaApiKey)
 let client = SearchClient(appID: algoliaAppId, apiKey: algoliaApiKey)
 let index = client.index(withName: "swift_index")
 
