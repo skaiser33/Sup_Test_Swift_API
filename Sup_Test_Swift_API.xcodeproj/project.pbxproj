@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E0B112652A6C027700E86FF5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B112642A6C027700E86FF5 /* main.swift */; };
+		E0B1126D2A6C038D00E86FF5 /* AlgoliaSearchClient in Frameworks */ = {isa = PBXBuildFile; productRef = E0B1126C2A6C038D00E86FF5 /* AlgoliaSearchClient */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0B1126D2A6C038D00E86FF5 /* AlgoliaSearchClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,9 @@
 			dependencies = (
 			);
 			name = Sup_Test_Swift_API;
+			packageProductDependencies = (
+				E0B1126C2A6C038D00E86FF5 /* AlgoliaSearchClient */,
+			);
 			productName = Sup_Test_Swift_API;
 			productReference = E0B112612A6C027700E86FF5 /* Sup_Test_Swift_API */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +111,9 @@
 				Base,
 			);
 			mainGroup = E0B112582A6C027700E86FF5;
+			packageReferences = (
+				E0B1126B2A6C038D00E86FF5 /* XCRemoteSwiftPackageReference "algoliasearch-client-swift" */,
+			);
 			productRefGroup = E0B112622A6C027700E86FF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,6 +292,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E0B1126B2A6C038D00E86FF5 /* XCRemoteSwiftPackageReference "algoliasearch-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/algolia/algoliasearch-client-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E0B1126C2A6C038D00E86FF5 /* AlgoliaSearchClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0B1126B2A6C038D00E86FF5 /* XCRemoteSwiftPackageReference "algoliasearch-client-swift" */;
+			productName = AlgoliaSearchClient;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E0B112592A6C027700E86FF5 /* Project object */;
 }
